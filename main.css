@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,500,600,700');
+
+* { box-sizing: border-box; }
+
+body{
+  min-width: 100%;
+  min-height: 100vh;
+  background-color: #333;
+}
+
+.wrapper{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 80%;
+  margin: 10% auto;
+}
+.box{
+  color: #fff;
+  /* width: 45%; */
+  min-height: 135px;
+  padding: 5%;
+  flex-wrap: wrap;
+}
+
+.italic{
+  font-style: italic;
+}
+
+.logo-box{
+  width: 30%;
+}
+
+.content-box{
+  width: 50%;
+  padding: 2%;
+}
+
+.r-box-font p{
+  font-family: 'Merriweather', serif;
+  font-weight: 800;
+  font-size: 2em;
+}
+
+.l-box-font {
+  font-family: 'Merriweather', serif;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.headline{
+  font-size: 1.3em;
+  color: #f1f161;
+}
+
+.info{
+  font-size: 1.2em;
+  font-weight: 900;
+  font-family: 'IBM Plex Serif', serif;
+  line-height: 1.3em;
+}
+
+.info-label{
+  color: #758884;
+  font-family: 'Merriweather', serif;
+  margin-right: .8%;
+}
+.tagline{
+  font-weight: 500;
+}
+
+.right-align{
+  text-align: right;
+}
+
+.left-align{
+  text-align: left;
+}
+
+.r-border{
+  border-right: 1px solid #5e6d6a;
+}
+
+.box p {
+  margin: 0;
+}
+
+@media (min-width: 600px) {
+  .c1 {
+    width: 60%;
+    -webkit-order: 2;
+    order: 2;
+  }
+
+  .c2 {
+    width: 40%;
+    -webkit-order: 1;
+    order: 1;
+  }
+
+  .c3 {
+    width: 100%;
+    -webkit-order: 3;
+    order: 3;
+  }
+}
